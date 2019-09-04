@@ -29,7 +29,7 @@ class Student
     
     result = DB[:conn].execute(sql, name)
       self.new_from_db(result)
-    end.first
+    end
   end
   
   def self.all_students_in_grade_9
