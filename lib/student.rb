@@ -30,7 +30,7 @@ class Student
     
     result = DB[:conn].execute(sql, name).flatten
       self.new_from_db(result)
-    end.first
+    
   end
   
   def self.all_students_in_grade_9
